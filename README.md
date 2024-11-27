@@ -5,7 +5,7 @@ Este repositório contém o código de uma aplicação que possui um **frontend*
 ## Requisitos
 
 - **Docker**: Certifique-se de ter o Docker instalado na sua máquina.
-- **Chave da API do Google**: Você precisará de uma chave da API do Google para o mapa estático.
+- **Chave da API do Google**: Você precisará de uma chave da API do Google para o calculo de rota e geração do mapa.
 
 ## Como Subir a Aplicação
 
@@ -16,7 +16,7 @@ Clone o repositório para sua máquina local utilizando o comando: </br>
 <br> 'cd technical_challenge_shopper'</br>
 
 - 2. Criar o Arquivo .env  </br>
-<br> Na raiz do projeto, crie um arquivo chamado .env e adicione a chave da API do Google para que o frontend consiga gerar os mapas corretamente: </br>
+<br> Na raiz do projeto, crie um arquivo chamado .env e adicione a chave da API do Google para que o frontend consiga gerar as rotas corretamente: </br>
 
 Copiar código
 <br>'GOOGLE_API_KEY=SUA_CHAVE_DA_API' </br>
