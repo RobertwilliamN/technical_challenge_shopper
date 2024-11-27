@@ -11,26 +11,26 @@ Este repositório contém o código de uma aplicação que possui um **frontend*
 
 ### 1. Clonar o Repositório
 
-Clone o repositório para sua máquina local utilizando o comando:
-'git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/RobertwilliamN/technical_challenge_shopper.git)'
-'cd technical_challenge_shopper'
+Clone o repositório para sua máquina local utilizando o comando: </br>
+<br>'git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/RobertwilliamN/technical_challenge_shopper.git)' </br>
+<br> 'cd technical_challenge_shopper'</br>
 
-- 2. Criar o Arquivo .env 
-Na raiz do projeto, crie um arquivo chamado .env e adicione a chave da API do Google para que o frontend consiga gerar os mapas corretamente:
+- 2. Criar o Arquivo .env  </br>
+<br> Na raiz do projeto, crie um arquivo chamado .env e adicione a chave da API do Google para que o frontend consiga gerar os mapas corretamente: </br>
 
 Copiar código
-'GOOGLE_API_KEY=SUA_CHAVE_DA_API'
+<br>'GOOGLE_API_KEY=SUA_CHAVE_DA_API' </br>
 
-- 3. Subir os Containers com Docker
-Após configurar o arquivo .env, você pode subir os containers utilizando o Docker. Execute o comando abaixo:
+<br>- 3. Subir os Containers com Docker </br>
+<br>Após configurar o arquivo .env, você pode subir os containers utilizando o Docker. Execute o comando abaixo: </br>
 
-'docker-compose up'
+<br>'docker-compose up' </br>
 
 4. Acessar a Aplicação
-Após os containers estarem rodando, você pode acessar a aplicação:
+<br>Após os containers estarem rodando, você pode acessar a aplicação:</br>
 
-O Frontend estará disponível em http://localhost (porta 80). -> Rotas / and /history
-O Backend estará disponível em http://localhost:8080 (porta 8080).
+<br>O Frontend estará disponível em http://localhost (porta 80). -> Rotas / and /history </br>
+<br>O Backend estará disponível em http://localhost:8080 (porta 8080). </br>
 
 - 5. Demonstração do Funcionamento
 
