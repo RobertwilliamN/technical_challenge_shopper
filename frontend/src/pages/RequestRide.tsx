@@ -135,7 +135,7 @@ const RequestRide: React.FC = () => {
               {route && (
                 <div className="mb-4 text-center">
                   <img
-                    src={`https://maps.googleapis.com/maps/api/staticmap?size=800x400&markers=color:red|${route.start_location.lat},${route.start_location.lng}&markers=color:blue|${route.end_location.lat},${route.end_location.lng}&path=weight:3|color:0x0000ff|${route.start_location.lat},${route.start_location.lng}|${route.end_location.lat},${route.end_location.lng}&key=${process.env.REACT_APP_GOOGLE_API_KEY}`}
+                    src={`https://maps.googleapis.com/maps/api/staticmap?size=800x400&markers=color:red|${route.start_location.lat},${route.start_location.lng}&markers=color:blue|${route.end_location.lat},${route.end_location.lng}&path=weight:3|color:0x0000ff|${route.start_location.lat},${route.start_location.lng}|${route.end_location.lat},${route.end_location.lng}&key=GOOGLE_API_KEY}`}
                     alt="Route Map"
                     className="img-fluid"
                   />
