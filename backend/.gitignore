@@ -1,0 +1,12 @@
+# Ignorar dependências de Node.js
+/node_modules/
+/dist/
+/.env
+*.log
+*.sqlite
+*.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp

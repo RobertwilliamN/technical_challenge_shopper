@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: ride_frontend
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"  # Mapeando para a porta 80 
+    volumes:
+      - ./frontend:/app # Persistindo volume
+    networks:
+      - app-network
+    #depends_on:
+    #  - backend  # Garante que o backend esteja rodando antes do frontend
+
+  backend:
+    container_name: ride_backend
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"  # Mapeando Porta
+    volumes:
+      - ./backend:/app # Persistindo volume
+    networks:
+      - app-network
+    env_file:
+      - .env  # Carrega as variáveis de ambiente do arquivo .env
+
+networks:
+  app-network:
+    driver: bridge
