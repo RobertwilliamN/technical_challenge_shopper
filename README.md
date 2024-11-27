@@ -2,9 +2,6 @@
 
 Este repositório contém o código de uma aplicação que possui um **frontend** e um **backend**, ambos configurados para serem executados em containers Docker. Abaixo estão as instruções para configurar e subir a aplicação corretamente.
 
-Formulário para solicitação de corrida:
-![image](https://github.com/user-attachments/assets/dc1ab0e5-af4a-42dd-aeb1-c58298535fbf)
-
 ## Requisitos
 
 - **Docker**: Certifique-se de ter o Docker instalado na sua máquina.
@@ -12,7 +9,6 @@ Formulário para solicitação de corrida:
 
 ## Como Subir a Aplicação
 
-```bash
 ### 1. Clonar o Repositório
 
 Clone o repositório para sua máquina local utilizando o comando:
