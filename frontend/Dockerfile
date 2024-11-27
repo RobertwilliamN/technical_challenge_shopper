@@ -15,6 +15,10 @@ RUN rm -rf /app/node_modules && \
 # Copia o restante dos arquivos da aplicação
 COPY . .
 
+# Passando a variável do .env para o React durante o build
+ARG GOOGLE_API_KEY
+ENV REACT_APP_GOOGLE_API_KEY=$GOOGLE_API_KEY
+
 # Faz o build do frontend para produção
 RUN npm run build
 
