@@ -5,19 +5,15 @@ services:
     container_name: ride_frontend
     build:
       context: ./frontend
-      args:
-        GOOGLE_API_KEY: ${GOOGLE_API_KEY}
     ports:
       - "80:80"  # Mapeando para a porta 80 
-    environment:
-      - REACT_APP_GOOGLE_API_KEY=${GOOGLE_API_KEY}
     volumes:
       - ./frontend:/app # Persistindo volume
       - /app/node_modules  # Volume anônimo para evitar sobrescrita
     networks:
       - app-network
-    #depends_on:
-    #  - backend  # Garante que o backend esteja rodando antes do frontend
+    depends_on:
+      - backend  # Garante que o backend esteja rodando antes do frontend
 
   backend:
     container_name: ride_backend
