@@ -5,9 +5,9 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "outDir": "./dist",  // Remova isso se não for compilar para dist
-    "rootDir": "./src",  // Remova ou ajuste se necessário
+    "outDir": "./dist",  // Pasta onde os arquivos compilados serão colocados
+    "rootDir": "./src",  // A pasta onde está o código TypeScript
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"],  
+  "exclude": ["node_modules"]  
 }

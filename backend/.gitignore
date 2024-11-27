@@ -1,6 +1,6 @@
 # Ignorar dependências de Node.js
 /node_modules/
-/dist/
+dist/
 /.env
 *.log
 *.sqlite

@@ -19,6 +19,7 @@ export const initializeDatabase = async (): Promise<Database> => {
                 driver_id INTEGER NOT NULL,
                 driver_name TEXT NOT NULL,
                 value REAL NOT NULL,
+                date DATETIME NOT NULL,
                 created_at DATETIME DEFAULT CURRENT_TIMESTAMP
             );
         `);

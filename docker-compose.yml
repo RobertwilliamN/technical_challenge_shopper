@@ -9,6 +9,7 @@ services:
       - "80:80"  # Mapeando para a porta 80 
     volumes:
       - ./frontend:/app # Persistindo volume
+      - /app/node_modules  # Volume anônimo para evitar sobrescrita
     networks:
       - app-network
     #depends_on:
@@ -22,6 +23,8 @@ services:
       - "8080:8080"  # Mapeando Porta
     volumes:
       - ./backend:/app # Persistindo volume
+      - /app/node_modules  # Volume anônimo para evitar sobrescrita
+      - /app/dist
     networks:
       - app-network
     env_file:
